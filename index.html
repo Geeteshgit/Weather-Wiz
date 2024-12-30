@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/stylesheets/style.css">
+    <link rel="shortcut icon" href="./assets/images/Weather Icons/20.png" type="image/x-icon">
+    <title>Weather Wiz</title>
+</head>
+<body>
+    <main id="main">
+
+        <!-- Header -->
+
+        <header id="header">
+            <div id="search">
+                <form action="" id="searchform">
+                    <i class="ri-search-line"></i>
+                    <input type="text" id="searchbar">
+                </form>
+            </div>
+            <div id="location" class="hide"></div>
+        </header>
+
+        <!-- Welcome Page -->
+
+        <section id="welcome">
+            <h1>Welcome to <br> Weather Wiz!</h1>
+            <p>Search Your City <i class="ri-arrow-right-up-line"></i></p>
+        </section>
+
+        <!-- Home Page -->
+
+        <section id="home" class="hide">
+            <div id="temp-contents">
+                <div id="temp-icon"></div>
+                <div id="temp-data"></div>
+            </div>
+            <div id="hourly-temp">
+                <div class="hourly-text">
+                    <h4>Today</h4>
+                    <p>Next 4 Days ></p>
+                </div>
+                <div class="hourly-cards">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cities-text">
+                <h4>Other Cities</h4>
+            </div>
+            <div id="cards-container"></div>
+        </section>
+
+        <!-- Weekly Forecast Page -->
+
+        <section id="days"class="hide">
+            <div class="back-icon">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+            <div id="weekly-data"></div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>    
+    <script src="./assets/javascripts/script.js"></script>  
+</body>
+</html>
