@@ -129,7 +129,7 @@ function initEvents(){
 
     async function getHourlyData(){
         try{
-            const hourlyWeather = await fetch(`http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/${locationKey}?apikey=${apiKey2}`);
+            const hourlyWeather = await fetch(`https://dataservice.accuweather.com/forecasts/v1/hourly/12hour/${locationKey}?apikey=${apiKey2}`);
             let hourlyConditions = await hourlyWeather.json();
             for(let i=0;i<12;i++){
                 hourlyData.innerHTML += 
@@ -221,7 +221,7 @@ function initEvents(){
 
     async function getWeeklyWeather(){
         try{
-            const weeklyWeather = await fetch(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${locationKey}?apikey=${apiKey2}`);
+            const weeklyWeather = await fetch(`https://dataservice.accuweather.com/forecasts/v1/daily/5day/${locationKey}?apikey=${apiKey2}`);
             let weeklyConditions = await weeklyWeather.json();
             tempData.innerHTML = 
                            `<div class="data-icon">
