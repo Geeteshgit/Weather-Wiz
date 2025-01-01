@@ -52,6 +52,7 @@ function initEvents(){
         location = searchBar.value;
         searchBar.value = "";
         cityCards.innerHTML = "";
+        hourlyData.innerHTML = "";
         weeklyData.innerHTML = "";
         getLocation();
     });
